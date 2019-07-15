@@ -1,0 +1,99 @@
+@charset "utf-8";
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>🚲</text></svg>") 16 0,auto;
+}
+#box {
+	padding: 20% 0 0 15%;
+}
+#canvas-basic {
+	position: absolute;
+	display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+path {
+/*	fill: url(#grad1);*/
+	fill: antiquewhite;
+}
+a {
+	color: antiquewhite;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 0.8em;
+	text-decoration: none;
+	border-bottom: 4px solid transparent;
+	transition: border-bottom 0.5s;
+}
+a#center {
+	position: fixed;
+	top: 2em;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+a#left {
+	position: fixed;
+	top: 50%;
+	left: 40px;
+	transform-origin: 0 0;
+	transform: rotate(-90deg) translate(-50%, 0);
+	text-align: center;
+	line-height: 0.8em;
+}
+a#right {
+	position: fixed;
+	top: 50%;
+	right: 40px;
+	transform-origin: 100% 0;
+	transform: rotate(90deg) translate(50%, 0);
+	text-align: center;
+}
+a#bottom {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: rotate(180deg) translate(50%, 0);
+	line-height: 0.8em;
+	text-align: center;
+}
+@media (max-width: 700px) {
+	svg {
+		position: fixed;
+		top: 50%;
+		left: 60%;
+		margin-top: -50px;
+		margin-left: -100px;
+		transform-origin: 0 0;
+		transform: rotate(-90deg) translate(-50%, 0);
+		line-height: 0.8em;
+	}
+	path {
+		fill: url(#grad1);
+	}
+	a {
+		display: none;
+	}
+}
+
+/* body {
+    margin: 0;
+	width: 100%;
+	background-color: #000001;
+	-webkit-transition: background-color 2s ease-out;
+	-moz-transition: background-color 2s ease-out;
+	-o-transition: background-color 2s ease-out;
+	transition: background-color 2s ease-out;
+}
+#spotify {
+	margin-top: 0;
+	display: flex;
+	float: lef;
+	width: 100%;
+} */

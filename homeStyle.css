@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+p {
+    color: wheat;
+    padding: 0 2em 0 2em;
+    font-size: 1em;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-indent: 50px;
+}
+h4 {
+    color: gray;
+    padding: 0 2em 0 2em;
+    font-size: 0.7em;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-indent: 50px;
+    padding-bottom: 1em;
+}
+h2 {
+    font-family: 'Libre Baskerville', serif;
+    color: wheat;
+    font-size: 3em;
+    margin-bottom: 0;
+    padding-left: 0.6em;
+}
+header {
+    background-image: url(assets/imgs/FloripaBikeToranjinaOrange.jpg);
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    height: 50vh;
+}
+header img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.divPad {
+    padding-top: 1em;
+}
+section {
+    display: flex;
+    flex-direction: row;
+}
+section:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+section div {
+    width: 50%;
+}
+section div.text {
+    pad: 60px;
+}
+section div.fullImg {
+    height: 100vh;
+    background-image: url(assets/imgs/9.jpg);
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+#spotify {
+    position: relative;
+    padding-bottom: 150%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    height: auto;
+    width: 50%;
+}
+#spotify iframe, #spotify object, #spotify embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
+section div.img2 {
+    background-image: url(assets/imgs/2.gif);
+}
+section div.img4 {
+    background-image: url(assets/imgs/blk.jpg);
+}
+#imgBottom {
+    background-image: url(assets/imgs/1.jpg);
+    background-size: cover;
+    background-position: center;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    height: 100vh;
+}
+@media (max-width: 800px) {
+    #spotify {
+        width: 100%;
+    }
+    body {
+        background-color: whitesmoke;
+    }
+    h2 {
+        font-size: 32px;
+        text-align: center;
+        color: goldenrod;
+    }
+    section {
+        display: block;
+    }
+    section div {
+        width: 100%;
+    }
+    section div.fullImg {
+        height: 100vw;;
+    }
+    p {
+        color: black;
+        padding-top: 0;
+    }
+}
